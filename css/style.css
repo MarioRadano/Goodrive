@@ -9,26 +9,30 @@
 h1 {
     font-family: 'Chakra Petch', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 45px;
 }
 
 h2 {
     font-family: 'Chakra Petch', sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 30px;
 }
 
 h3 {
     font-family: 'Chakra Petch', sans-serif;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 16px;
     color: var(--text);
+}
+
+.p-home{
+    font-size: 16px;
 }
 .nav-item{
     font-family: 'Chakra Petch', sans-serif;
@@ -42,8 +46,8 @@ a{
 }
 button{
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 11px;
+    font-weight: 600;
+    font-size: 15px;
     text-transform: uppercase;
     background-color: var(--lightblue);
     border-radius: 8px;
@@ -136,16 +140,17 @@ footer p{
 
 /*banner*/
 .banner{
-    height:110px;
+    height:200px;
     overflow-x: hidden;
     margin-bottom:52px;
 
 }
 .banner-mission{
-    background:linear-gradient(to bottom,rgba(0, 0, 0, 0), var(--darkblue)), url("mission_banner-transformed_mobile.png") center top;
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0), var(--darkblue)), url("mission_banenr_mobile.png") no-repeat center top;
+    background-size: cover;
 }
 .banner-aboutus{
-    background:linear-gradient(to bottom,rgba(0, 0, 0, 0), var(--darkblue)), url("banner_aboutus_desktop.png") no-repeat center;
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0), var(--darkblue)), url("About-us-banner.png") no-repeat center;
     background-size: cover;
 }
 
@@ -194,6 +199,7 @@ footer p{
 /*cards*/
 .card{
     background-color:var(--darkblue);
+
 }
 .large{
     border:none;
@@ -224,29 +230,24 @@ footer p{
 }
 /*carousel*/
 .carousel.mission{
-    margin-top:96px;
     margin-bottom:87px;
 }
-/*.mission .carousel-item{
+
+.mission .carousel-item{
     height:513px;
     width:87.5vw;
     border: solid 5px var(--lightblue);
     margin-left:3.5vw;
     border-radius:5px;
-}*/
-
-
-
-
+}
 
 .mission .carousel-item .card{
-    border:solid 5px var(--lightblue);
-    height:450px;
-    width:87.5vw;
-    border-radius:5px;
+    border: none;
 }
-.mission .carousel-item img{
 
+.mission .carousel-item img{
+    margin-top:65px;
+    margin-bottom:73px;
 }
 
 .carousel-control-prev{
@@ -276,14 +277,18 @@ footer p{
     box-sizing: border-box;
 }
 
+#carouselSingleEvent2 .carousel-control-prev, #carouselSingleEvent2 .carousel-control-next, #carouselSingleEvent .carousel-control-prev, #carouselSingleEvent .carousel-control-next{
+    transform:translateY(-20px)
+}
+
 /*carousel desktop*/
 .cards-container{
     width:91.7vw;
-    margin-bottom:170px;
+    margin-bottom:150px;
 }
 .cards-container .card{
     width:29.6vw;
-    height:576px;
+    min-height:630px;
     border:solid var(--lightblue) 5px;
     border-radius:5px;
     box-sizing: border-box;
@@ -296,7 +301,7 @@ footer p{
 /*home*/
 
 .banner-home{
-    height:516px;
+    height:640px;
     background: url("background_home_mobile.png") repeat-x 0 0;
     background-size: auto 100%;
     animation: slide 100s linear infinite;
@@ -343,8 +348,8 @@ footer p{
     height:415px;
 }
 .tools-home{
-    margin-bottom:186px;
-    top:-40px;
+    margin-bottom:120px;
+    margin-top: 10px;
 }
 .tools-home div{
     width:418px;
@@ -366,7 +371,7 @@ footer p{
     margin-bottom:106px;
 }
 .events-home .card{
-    height: 522px !important;
+    height: 582px !important;
 }
 .events-home{
     margin-bottom:120px!important;
@@ -396,7 +401,7 @@ footer p{
 .about-home h3{
     color:var(--text);
     margin-bottom:0;
-    margin-top:10px;
+    margin-top:-120px;
 }
 .about-home .card{
     border:none;
@@ -471,11 +476,14 @@ footer p{
 }
 #carouselAboutUs .card{
     width:68.7vw;
-    height:161px;
+    height:240px;
     border:solid var(--lightblue) 3px;
+    margin-bottom: 42px;
+
 }
 #carouselAboutUs h3{
     color:var(--yellow);
+    margin-top: 7px;
 }
 #carouselAboutUs .carousel-control-next{
     transform:translate(-34.6vw, 120px);
@@ -483,29 +491,28 @@ footer p{
 #carouselAboutUs .carousel-control-prev{
     transform:translate(34.6vw, 120px);
 }
-#carouselSingleEvent2 .carousel-control-prev, #carouselSingleEvent2 .carousel-control-next, #carouselSingleEvent .carousel-control-prev, #carouselSingleEvent .carousel-control-next{
-    transform:translateY(-20px)
-}
-
 .timeline .card{
     width:25.7vw;
-    min-height:257px;
+    min-height:320px;
     height:auto;
     border:solid var(--lightblue) 5px;
     border-radius: 5px;
     padding:18px;
+
 }
 #timelineContainer{
     height:257px;
     width:132.2vw;
     left:0;
     transition:1s;
+
 }
 .timeline{
     height:257px;
     width:132.2vw;
     left:0;
     z-index:1000;
+    margin-top: 50px;
 }
 .timeline h3{
     color:var(--yellow);
@@ -517,10 +524,12 @@ footer p{
 }
 .controls button{
     background-color: transparent;
+    margin-top: 120px;
+    margin-bottom: 10px;
 }
 .controls{
     width:5vw;
-    margin-bottom:170px;
+    margin-bottom:150px;
     z-index:2000;
 }
 #readMoreButton{
@@ -543,16 +552,12 @@ footer p{
 #carouselTeam{
     margin-bottom:86px;
 }
-.team-desktop{
-    margin-bottom:170px;
-}
+
 .team-component{
     width:414px;
     height:534px;
 }
-.team-component:nth-child(1), .team-component:nth-child(2), .team-component:nth-child(3){
-    margin-bottom:200px;
-}
+
 @media screen and (max-width:930px){
     .team-component:nth-child(4), .team-component:nth-child(5){
         margin-bottom:200px;
@@ -561,14 +566,21 @@ footer p{
 .team-desktop h3{
     color:var(--text);
 }
+
+.team-desktop{
+    margin-bottom: 60px;
+}
+
+.team-component .position-absolute{
+    top:200px;
+    left:-30px;
+    transition:1s;
+}
+
 .team-component img:first-child{
     z-index:1000;
 }
-.team-component .position-absolute{
-    top:-33px;
-    left:0;
-    transition:1s;
-}
+
 .team-component {
     transition:1s;
 }
@@ -620,6 +632,7 @@ input{
     left:-100vw;
 }
 
+
 /*smart helmet*/
 
 .smart-card{
@@ -660,14 +673,17 @@ input{
 }
 .big-camera{
     margin-bottom:150px;
+    margin-top: 30px;
 }
 .big-camera p:nth-child(2){
     top:50px;
     left:50vw;
+    line-height: 1.5;
 }
 .big-camera p:nth-child(3){
-    top:700px;
-    right:65vw;
+    top:678px;
+    right:68vw;
+    line-height: 1.5;
 }
 .single-event .card-text{
     border:none !important;
@@ -697,6 +713,7 @@ input{
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
         font-size: 16px;
+        line-height: 2;
     }
     label{
         font-family: 'Chakra Petch', sans-serif;
@@ -745,10 +762,11 @@ input{
         margin-bottom:159px;
     }
     .banner-mission{
-        background:linear-gradient(to bottom,rgba(0, 0, 0, 0), var(--darkblue)), url("mission_banner-transformed.webp") fixed;
+        background:linear-gradient(to bottom,rgba(0, 0, 0, 0), var(--darkblue)), url("Mission_banner.png") no-repeat fixed;
+        background-size: cover;
     }
     .banner-aboutus{
-        background:linear-gradient(to bottom,rgba(0, 0, 0, 0), var(--darkblue)), url("banner_aboutus_desktop.png") fixed;
+        background:linear-gradient(to bottom,rgba(0, 0, 0, 0), var(--darkblue)), url("About-us-banner.png") fixed;
     }
     .banner-events {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--darkblue)), url("banner_events_desktop.png") no-repeat fixed center;
@@ -780,9 +798,9 @@ input{
         margin-left:42.8vw;
     }
     .large .card-text{
-        border: var(--lightblue) solid 5px;
-        border-radius: 5px;
         width:37.4vw;
+        min-height:329px;
+        height:auto;
     }
     .large img{
         margin:0;
@@ -802,6 +820,10 @@ input{
         left:-37vw;
         background-image: url("decoration_left_title.png");
         background-position: right;
+        margin-top: 100px;
+        height: 100px;
+        transform: scaleY(-1);
+
     }
     .title.left h2{
         margin-right:109px;
@@ -814,7 +836,16 @@ input{
         left:35.2vw;
         background-image: url("decoration_right_title.png");
         background-position: left;
+        margin-top: 100px;
+        height: 100px;
+        transform: scaleY(-1);
     }
+
+    .title-transform{
+        transform: scaleY(-1);
+        margin-top: 10px;
+    }
+
     /*home*/
     .banner-home{
         height:490px;
@@ -831,31 +862,37 @@ input{
     .banner-home p{
         width:33.6vw;
     }
-    .large .card-text{
-        min-height:329px;
-        height:auto;
+    .title.left.home{
+        margin-top: -40px;
+    }
+    .image-home{
+        margin-top: 20px;
     }
     #triangle{
         top:-34px;
         transform-origin: 65% 48%
     }
+
     .large{
         margin-bottom:170px;
     }
-    .post-events{
-        margin-top:0;
-        margin-bottom:170px;
-        width:265px;
-        height:41px;
-    }
+
     .about-home{
-        margin-bottom:116px; !important;
+        margin-bottom:-20px !important;
+        margin-top: -90px;
     }
+
     .post-about{
         width:265px;
         height:41px;
         margin-bottom:170px;
+        z-index: 10;
     }
+
+    .margin-index{
+        margin-bottom: 120px;
+    }
+
     .helmet .card-text{
         border:none;
         width:44.6vw;
@@ -869,8 +906,42 @@ input{
         margin-bottom:159px;
         width:60.7vw;
     }
+
+    .photo{
+        width:240px;
+    }
+
+    .triangle-about{
+        width:350px;
+    }
+
+    .title.right.team{
+        margin-top: 60px;
+    }
+
+    .margin-team{
+        margin-top: -50px;
+    }
+
+    .space-team{
+        margin-top: -200px;
+    }
+    .margin-about{
+        margin-bottom: 80px;
+    }
+
+    .team-component .position-absolute{
+        top:0;
+        left:19px;
+        transition:1s;
+    }
+
+    .clienti{
+        margin-top: -60px;
+    }
     .contatti{
         margin-bottom:170px;
+        margin-top: -70px;
     }
     .icons-aboutus{
         width:216px;
@@ -897,8 +968,6 @@ input{
     /*smart helmet*/
     .future{
         width:63.4vw;
-        border:solid var(--lightblue) 5px;
-        border-radius:5px;
         margin-bottom:170px;
         padding-bottom:150px;
         height: auto;
@@ -922,6 +991,7 @@ input{
         height:253px;
         left:5vw;
         top:520px;
+
     }
     .contain-smart.right{
         clip-path: polygon(13% 0, 100% 0, 100% 100%, 13% 100%, 0 50%);
@@ -937,6 +1007,9 @@ input{
         width:37vw;
 
     }
+    .smart-tag p{
+        line-height: 1.8;
+    }
     .left .smart-tag{
         clip-path: polygon(87% 1%, 100% 50%, 87% 100%, 0 100%, 0 0);
         height:242px;
@@ -945,8 +1018,18 @@ input{
         clip-path: polygon(13% 0, 100% 0, 100% 100%, 13% 100%, 0 50%);
         height:272px;
     }
+
+    .left .smart-tag p{
+        width: 433px;
+    }
+
+    .right .smart-tag p{
+       margin-left: 50px;
+    }
+
+
     .smart-card{
-        margin-top:150px;
+        margin-top:200px;
         margin-left:12.4vw;
         height:auto;
         width:49.5vw;
@@ -978,6 +1061,11 @@ input{
     .event-title{
         margin-bottom:118px !important;
     }
+    .title.right.event-title{
+        margin-top: -7px;
+        transform: scaleY(1);
+    }
+
     .event-title img{
         top:0;
     }
@@ -989,7 +1077,15 @@ input{
         width:29.1vw;
         padding:0;
     }
+
+    .title.right.event-single{
+        margin-top: -10px;
+    }
+
     /*tools*/
+    .space-tool{
+        margin-top: -40px;
+    }
     .app-description{
         width:45.1vw;
     }
@@ -1007,16 +1103,34 @@ input{
         width:21.9vw;
     }
     .app p:nth-child(2){
-        top:-50px;
-        left:6vw;
+        top:-83px;
+        left:4vw;
+        line-height: 1.4;
     }
     .app p:nth-child(3){
-        top:-100px;
-        left:53vw;
+        top:-104px;
+        left:52.2vw;
+        line-height: 1.4;
     }
     .app p:nth-child(4){
-        top:135px;
+        top:109px;
+        left:52vw;
+        line-height: 1.4;
+    }
+    .app-2 p:nth-child(2){
+        top:-29px;
+        left:4vw;
+        line-height: 1.4;
+    }
+    .app-2 p:nth-child(3){
+        top:-112px;
         left:53vw;
+        line-height: 1.4;
+    }
+    .app-2 p:nth-child(4){
+        top:128px;
+        left:53vw;
+        line-height: 1.4;
     }
 
     .phones img{
@@ -1050,7 +1164,6 @@ input{
     }
     .app p:nth-child(4){
         top:19vw;
-
     }
 }
 @media screen and (min-width:1200px){
@@ -1076,6 +1189,174 @@ input{
     }
 }
 
+@media screen and (max-width:768px){
+    .lines {
+        display: none;
+    }
+    .margin{
+        margin-bottom: 38px;
+    }
+    .margin-phone{
+        margin-bottom: 50px;
+    }
+    .title{
+        margin-top: 35px;
+    }
+
+    /* pagina tools */
+
+    .card-text{
+        margin-top: -22px;
+    }
+
+    .margin-tools{
+        margin-top: -60px;
+    }
+    .title-tools{
+        margin-top: 55px;
+    }
+    .title-camera{
+        margin-top: 80px;
+    }
+    .margin-camera{
+        margin-top: -35px;
+        margin-bottom: 10px;
+    }
+    .title-gamification{
+        margin-top: 2px;
+    }
+
+    /*pagina about us */
+    .title-aboutus{
+        margin-top: -20px;
+    }
+    .title-clienti{
+        margin-top: 17px;
+    }
+    .margin-icon{
+        margin-top: -40px;
+    }
+
+    .form-label{
+        font-size: 20px;
+        margin-top: 18px;
+    }
+
+    /* pagina singoli eventi */
+    .margin-events-card{
+        margin-top: -60px;
+    }
+
+    /* pagina smart helmet */
+    .margin-smart{
+        margin-top: 45px;
+    }
+    .title-smart{
+        margin-top: 60px;
+    }
+
+}
+
+@media screen and (min-width:992px){
+    .post-events{
+        margin-top:0;
+        margin-bottom:170px;
+        width:265px;
+        height:41px;
+    }
+}
+@media screen and (max-width:860px){
+    .about-home img{
+        transform:scale(0.9);
+    }
+}
+#carouselAboutUs .card{
+    padding-left:5vw;
+    padding-right:5vw;
+}
+@media screen and (min-width:768px) and (max-width:900px){
+    .smart-tag p{
+        line-height:1.5;
+    }
+    .left .smart-tag p{
+        width: 390px;
+        padding: 27px !important;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1230px){
+    .contain-smart{
+        width:51vw;
+    }
+    .smart-tag{
+        width:50vw;
+    }
+    .contain-smart.left{
+        left:0;
+    }
+}
+@media screen and (min-width:1231px) and (max-width:1320px){
+    .right .smart-tag{
+        width:40vw;
+    }
+    .contain-smart.right{
+        width:40.8vw;
+    }
+}
+@media screen and (min-width:768px) and (max-width:786px){
+    .right .smart-tag p{
+        padding-top:0.5rem !important;
+    }
+}
 
 
+.card-text img:first-of-type{
+    transform:translate(-2vw, 20px)
+}
+.card-text img:last-of-type{
+    transform:translate(-2vw, -20px)
+}
+.flex-md-row .card-text img:first-of-type{
+    transform:translate(2vw, 20px)
+}
+.flex-md-row .card-text img:last-of-type{
+    transform:translate(2vw, -20px)
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .bigger-images .d-flex img {
+        transform: scale(1.5);
+        padding-top:40px;
+    }
+    .bigger-images .carousel-inner{
+        height:340px;
+    }
+    .bigger-images .carousel-control-next, .bigger-images .carousel-control-prev{
+        margin-top:80px;
+    }
+    .bigger-images h3{
+        margin-top:70px;
+    }
+}
+/*
+cambiato breakpoint da md a lg così non sballa di:
+-contatore in home
+-sezione eventi in home
+-carosello in mission
+carosello in about us (la nostra storia, modificato anche padding)
+cambiato media query di .post-event per posizionare bene il bottone
+rimpicciolito le immagini nella sezione about us della home tra i 768 e gli 860 px per evitare che si incastrino
+centrato in altezza i testi nelle card che scorrono in about us su mobile
+cambiato dimensioni, padding e line-height dei div a pentagono in smart helmet, per farli più responsive
+abbreviato un nome evento lunghissimo (automotive testing expo --> A.T.E.)
+aggiunto le barrette blu invece che il bordo a:
+-le due card in Mission
+-la sezione Mission della home
+sistemato una card in Mission che si disallineava perché ha meno testo
+ */
 
+/*
+ cambiamenti 12/04
+-anche sezione about us della home passa da carosello a 3 elementi insieme a lg invece che md
+-idem tools
+-ingrandito immagini tra md e lg nei carousel modificati (aggiungendo classe bigger-images)
+-modificato spazi tra le frecce e le scritte nei carousel modificati per allineare tutto
+ */
