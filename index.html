@@ -24,22 +24,22 @@
     <div class="collapse navbar-collapse d-md-flex justify-content-end" id="navbarNav">
       <ul class="navbar-nav ps-2">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html"><span class="active">Home</span></a>
+          <a class="nav-link" href="index.html"><span class="active">Home</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="1-Mission.html">Mission</a>
+          <a class="nav-link"   href="1-Mission.html">Mission</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="2-Tools.html">Tools</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="3-About%20Us.html">About Us</a>
+          <a class="nav-link" aria-current="page" href="3-About-Us.html">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="4-Events.html">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="5-Smart%20Helmet.html">Smart Helmet</a>
+          <a class="nav-link" href="5-Smart-Helmet.html">Smart Helmet</a>
         </li>
       </ul>
     </div>
@@ -49,12 +49,12 @@
 <!--banner-->
 
 <div class="banner-home d-flex flex-column justify-content-between align-items-center align-items-md-start container-fluid mx-0 position-relative">
-  <h1 class="align-self-start">Goodrive</h1>
-  <a class="d-md-none" href="#"><img src="img/home_mobile_smartphones.png" alt="app"></a>
-  <p class="p-3 m-md-0">L’applicazione che ti fa guidare meglio e in sicurezza. Migliora la tua attenzione, ti avvisa di potenziali pericoli e ti garantisce sicurezza, per te e per gli altri! Scaricala subito!</p>
-      <div class="icons-home pb-4 pb-md-0">
-        <img class="zoom px-3 px-md-0 pe-md-5" src="img/playstore_big.png" alt="playstore">
-        <img class="zoom px-3 px-md-0" src="img/appstore_big.png" alt="appstore">
+  <h1 class="align-self-start margin">Goodrive</h1>
+  <a class="d-md-none margin-phone"><img src="img/home_mobile_smartphones.png" alt="app"></a>
+  <p class="p-3 m-md-0 margin">L’applicazione che ti fa guidare meglio e in sicurezza. Migliora la tua attenzione, ti avvisa di potenziali pericoli e ti garantisce sicurezza, per te e per gli altri! Scaricala subito!</p>
+      <div class="icons-home pb-4 pb-md-0 margin">
+        <a href="https://play.google.com/store/apps?hl=it&gl=US" target="_blank"><img class="zoom px-3 px-md-0 pe-md-5" src="img/playstore_big.png" alt="playstore"></a>
+        <a href="https://www.apple.com/it/store" target="_blank"><img class="zoom px-3 px-md-0" src="img/appstore_big.png" alt="appstore"></a>
       </div>
       <div class="position-absolute d-none d-md-flex justify-content-evenly align-items-center smartphones">
         <div class="tilt">
@@ -70,12 +70,12 @@
 
 <!--card-->
 
-<div class="title left position-relative">
-  <h2 class="text-md-end text-center pt-md-4">Mission</h2>
+<div class="title left position-relative home">
+  <h2 class="text-md-end text-center pt-md-4 title-transform">Mission</h2>
 </div>
 
-<div class="card large flex-column flex-md-row-reverse align-items-center justify-content-center justify-content-md-evenly">
-  <div class="position-relative">
+<div class="card large flex-column flex-md-row-reverse align-items-center justify-content-center justify-content-md-evenly margin-index">
+  <div class="position-relative image-home">
   <picture>
     <source srcset="img/agenda_logo_home_desktop.png" media="(min-width:768px)">
     <img src="img/agenda_logo_home.png" class="image-decorated position-relative" alt="agenda" >
@@ -86,27 +86,31 @@
     </picture>
   </div>
   <div class="card-text mx-auto mx-md-0 p-3 p-md-5 d-flex flex-column align-items-center align-items-md-start">
-    <p>L’obiettivo di Goodrive è di accompagnare e assistere quotidianamente i guidatori, migliorandone l’attenzione e la percezione dei pericoli, generando sicurezza per sé stessi e per gli altri. </p>
-    <button class="zoom" type="button">Scopri di più</button>
+    <img src="img/blue_decoration_upleft.png" class="d-none d-md-block">
+    <p class="ms-md-4">
+      L’obiettivo di Goodrive è di accompagnare e assistere quotidianamente i guidatori, migliorandone l’attenzione e la percezione dei <b>pericoli</b>, generando <b>sicurezza</b> per sé stessi e per gli altri.
+    </p>
+    <button class="minizoom mx-auto" type="button" onclick="window.location.href='1-Mission.html';">Scopri di più</button>
+    <img src="img/blue_decoration_downleft.png" class="d-none d-md-block">
   </div>
 </div>
 
 <!-- Tool -->
 
 <div class="title right position-relative">
-  <h2 class="text-md-start text-center pt-md-4">Tool</h2>
+  <h2 class="text-md-start text-center pt-md-4 title-transform">Tools</h2>
 </div>
 
-<div class="carousel slide d-md-none" data-bs-ride="carousel" id="carouselToolHome">
+<div class="carousel slide d-lg-none bigger-images" data-bs-ride="carousel" id="carouselToolHome">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="d-flex flex-column align-items-center">
-        <img src="img/tool_triangle_mobile.png" alt="img">
+        <a href="2-Tools.html#linkapp"><img src="img/tool_triangle_mobile.png" alt="img"></a>
       </div>
     </div>
     <div class="carousel-item">
       <div class="d-flex flex-column align-items-center">
-        <img src="img/telecamera_triangle_mobile.png" alt="img">
+        <a href="2-Tools.html#linkcamera"><img src="img/telecamera_triangle_mobile.png" alt="img"></a>
        </div>
     </div>
   </div>
@@ -118,14 +122,14 @@
   </a>
 </div>
 
-<div class="d-none d-md-flex justify-content-evenly position-relative tools-home">
+<div class="d-none d-lg-flex justify-content-evenly position-relative tools-home">
   <div class="position-relative">
-    <a href="#"><h3 class="text-center">APP</h3></a>
-  <img class="zoom-decoration position-absolute" src="img/triangle_circle_home_desktop.png" alt="decoration">
+    <h3 class="text-center">APP</h3>
+    <a href="2-Tools.html#linkapp"><img class="zoom-decoration position-absolute" src="img/triangle_circle_home_desktop.png" alt="decoration"></a>
   </div>
   <div class="position-relative">
-    <a href="#"><h3 class="text-center">TELECAMERA</h3></a>
-    <img class="zoom-decoration position-absolute" src="img/triangle_circle_home_desktop.png" alt="decoration">
+    <h3 class="text-center">TELECAMERA</h3>
+    <a href="2-Tools.html#linkcamera"><img class="zoom-decoration position-absolute" src="img/triangle_circle_home_desktop.png" alt="decoration"></a>
   </div>
 </div>
 
@@ -133,10 +137,10 @@
 <!--Eventi-->
 
 <div class="title left position-relative">
-  <h2 class="text-md-end text-center pt-md-4">Eventi</h2>
+  <h2 class="text-md-end text-center pt-md-4 title-transform">Eventi</h2>
 </div>
 
-<div class="carousel slide d-md-none" data-bs-ride="carousel" id="carouselEventHome">
+<div class="carousel slide d-lg-none bigger-images" data-bs-ride="carousel" id="carouselEventHome">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="d-flex flex-column align-items-center">
@@ -162,33 +166,33 @@
   </a>
 </div>
 
-<div class="d-none d-md-flex cards-container justify-content-between mx-auto events-home">
+<div class="d-none d-lg-flex cards-container justify-content-between mx-auto events-home">
   <div class="card flex-column align-items-center justify-content-evenly">
     <img src="img/eventi_first_desktop.png" alt="img">
-    <p>Immergiti nella nuova realtà automobilistica di GooDrive! Vieni a provare le capacità della nostra Goody in questo evento appositamente organizzato per mostrarti quando può essere d’aiuto e divertente.
+    <p>Immergiti nella nuova realtà automobilistica di <b>GooDrive</b>! Vieni a provare le capacità della nostra <b>Goody</b> in questo evento appositamente organizzato per mostrarti quando può essere d’aiuto e divertente.
     </p>
   </div>
   <div class="card flex-column align-items-center justify-content-evenly">
     <img src="img/events_second_desktop.png" alt="img">
-    <p>Dopo ben tre edizioni cancellate a causa del periodo pandemico la fiera del Salone di Givevra riapre, e ci siamo anche noi! La 91esima edizione del Salone Internazionale dell'automobile di Ginevra è partita per il 2023! </p>
+    <p>Dopo ben tre edizioni cancellate a causa del periodo pandemico la <b>fiera del Salone di Givevra</b> riapre, e ci siamo anche noi! La 91esima edizione del Salone Internazionale dell'automobile di Ginevra è partita per il <b>2023</b>! </p>
   </div>
   <div class="card flex-column align-items-center justify-content-evenly">
     <img src="img/events_third_desktop.png" alt="img">
     <p>Scopri la nostra applicazione, il nostro team e ciò che offriamo.
-      Non perderti una dimostrazione sul luogo di come funziona GooDrive e tutto ciò che stiamo pianificando.
+      Non perderti una <b>dimostrazione</b> sul luogo di come funziona GooDrive e tutto ciò che stiamo pianificando.
       Cosa aspetti a provarla anche tu?</p>
   </div>
 </div>
 
-<button class="zoom post-events mx-auto" type="button">visualizza</button>
+<button class="minizoom post-events mx-auto" type="button" onclick="window.location.href='4-Events.html';">visualizza</button>
 
-<!--carousel+cards-->
+<!--about us-->
 
 <div class="title right position-relative">
-  <h2 class="text-md-start text-center pt-md-4">About Us</h2>
+  <h2 class="text-md-start text-center pt-md-4 title-transform">About Us</h2>
 </div>
 
-<div class="carousel slide d-md-none" data-bs-ride="carousel" id="carouselAboutUsHome">
+<div class="carousel slide d-lg-none bigger-images" data-bs-ride="carousel" id="carouselAboutUsHome">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="d-flex flex-column align-items-center">
@@ -217,46 +221,46 @@
   </a>
 </div>
 
-<div class="d-none d-md-flex cards-container justify-content-between mx-auto about-home">
-  <div class="card flex-column align-items-center justify-content-between">
+<div class="d-none d-lg-flex cards-container justify-content-between mx-auto about-home">
+  <div class="card flex-column align-items-center justify-content-evenly">
     <img src="img/aboutus_first_desktop.png" alt="img">
-    <a href="#"><h3>Team</h3></a>
+    <h3>Team</h3>
   </div>
-  <div class="card flex-column align-items-center justify-content-between">
+  <div class="card flex-column align-items-center justify-content-evenly">
     <img src="img/aboutus_second_desktop.png" alt="img">
-    <a href="#"><h3>I nostri clienti</h3></a>
+    <h3>I nostri clienti</h3>
     </div>
-  <div class="card flex-column align-items-center justify-content-between">
+  <div class="card flex-column align-items-center justify-content-evenly">
     <img src="img/aboutus_third_desktop.png" alt="img">
-    <a href="#"><h3>Contatti</h3></a>
+    <h3>Contatti</h3>
   </div>
 </div>
 
-<button class="zoom post-about mx-auto" type="button">chi siamo</button>
+<button class="minizoom post-about mx-auto" type="button" onclick="window.location.href='3-About-Us.html';">chi siamo</button>
 
 <!--smart-helmet-->
 
 <div class="title left position-relative">
-  <h2 class="text-md-end text-center pt-md-4">Smart Helmet</h2>
+  <h2 class="text-md-end text-center pt-md-4 title-transform">Smart Helmet</h2>
 </div>
 
 <div class="card large helmet flex-column flex-md-row-reverse align-items-center justify-content-center justify-content-md-evenly mx-md-auto">
   <div class="position-relative">
     <picture>
       <source srcset="img/helmet_home_desktop.png" media="(min-width:768px)">
-      <img src="img/helmet_home_mobile.png" alt="helmet" class="zoom">
+      <img src="img/helmet_home_mobile.png" alt="helmet">
     </picture>
   </div>
   <div class="card-text mx-auto mx-md-0 p-3 p-md-5 d-flex flex-column align-items-center align-items-md-start">
-    <p>Abbiamo iniziato a lavorare ad un progetto futuro, con l’idea di sviluppare un casco che possegga una telecamera più piccola e  la relativa applicazione (uguale quella attuale).
+    <p>Abbiamo iniziato a lavorare ad un progetto futuro, con l’idea di sviluppare un <b>casco</b> che possegga una telecamera più piccola e  la relativa applicazione (uguale quella attuale).
       In questo modo sarà possibile salvare vite anche per chi va in bicicletta o in monopattino.</p>
-      <button class="zoom" type="button">rimani aggiornato</button>
+      <button class="minizoom mx-auto" type="button" onclick="window.location.href='5-Smart-Helmet.html';">AGGIORNAMI</button>
   </div>
 </div>
 
 <!--banner-bottom-->
 
-<div class="carousel slide d-md-none" data-bs-ride="carousel" id="carouselBanner">
+<div class="carousel slide d-lg-none" data-bs-ride="carousel" id="carouselBanner">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="d-flex flex-column align-items-center">
@@ -288,7 +292,7 @@
   </a>
 </div>
 
-<div class="d-none d-md-flex justify-content-evenly align-items-center banner-bottom">
+<div class="d-none d-lg-flex justify-content-evenly align-items-center banner-bottom">
   <div class="position-relative">
     <a href="#"><h1 class="text-center" data-target="230">0</h1></a>
     <img class="zoom-decoration position-absolute" src="img/triangle_circle_home_desktop.png" alt="decoration">
@@ -309,39 +313,43 @@
 <!--footer-->
 
 <footer class="container-fluid d-flex flex-column justify-content-around align-items-center px-0">
-  <a class="d-none d-md-block zoom" href="index.html"><img src="img/logo_footer.png" alt="logo"></a>
+  <a class="d-none d-md-block minizoom" href="index.html"><img src="img/logo_footer.png" alt="logo"></a>
   <div class="d-flex flex-column flex-md-row justify-content-between align-items-center icons-contacts">
     <div class="icons d-flex justify-content-between order-md-2 pb-3 pb-md-0 ms-md-5">
+      <a href="https://play.google.com/store/apps?hl=it&gl=US" target="_blank">
       <picture>
         <source srcset="img/playstore_big.png" media="(min-width:768px)">
-        <img class="zoom" src="img/playstore.png" alt="playstore">
-      </picture>
+        <img class="minizoom" src="img/playstore.png" alt="playstore">
+      </picture></a>
+      <a href="https://www.apple.com/it/store" target="_blank">
       <picture>
         <source srcset="img/appstore_big.png" media="(min-width:768px)">
-        <img class="zoom" src="img/appstore.png" alt="appstore">
-      </picture>
+        <img class="minizoom" src="img/appstore.png" alt="appstore">
+      </picture></a>
+      <a href="https://www.facebook.com/" target="_blank">
       <picture>
         <source srcset="img/facebook_big.png" media="(min-width:768px)">
-        <img class="zoom" src="img/facebook.png" alt="facebook">
-      </picture>
+        <img class="minizoom" src="img/facebook.png" alt="facebook">
+      </picture></a>
+      <a href="https://www.instagram.com/" target="_blank">
       <picture>
         <source srcset="img/instagram_big.png" media="(min-width:768px)">
-        <img class="adjust zoom" src="img/instagram.png" alt="instagram">
-      </picture>
+        <img class="adjust minizoom" src="img/instagram.png" alt="instagram">
+      </picture></a>
     </div>
     <p class="order-md-1 pb-1 pb-md-0"><b>cellulare:</b> 3467589342</p>
     <p class="order-md-3 adjust"><b>e-mail:</b> goodrive@gmail.com</p>
   </div>
   <div class="d-none d-md-flex justify-content-between p-0 m-0 footer-nav">
-    <p class="zoom">Mission</p>
+    <a href="1-Mission.html"><p class="minizoom">Mission</p></a>
     <p>|</p>
-    <p class="zoom">Tool</p>
+    <a href="2-Tools.html"><p class="minizoom">Tool</p></a>
     <p>|</p>
-    <p class="zoom">About Us</p>
+    <a href="3-About-Us.html"><p class="minizoom">About Us</p></a>
     <p>|</p>
-    <p class="zoom">Events</p>
+    <a href="4-Events.html"><p class="minizoom">Events</p></a>
     <p>|</p>
-    <p class="zoom">Future Projects</p>
+    <a href="5-Smart-Helmet.html"><p class="minizoom">Smart Helmet</p></a>
   </div>
 </footer>
 
