@@ -476,7 +476,7 @@ footer p{
 }
 #carouselAboutUs .card{
     width:68.7vw;
-    height:240px;
+    height:270px;
     border:solid var(--lightblue) 3px;
     margin-bottom: 42px;
 
@@ -486,10 +486,10 @@ footer p{
     margin-top: 7px;
 }
 #carouselAboutUs .carousel-control-next{
-    transform:translate(-34.6vw, 120px);
+    transform:translate(-34.6vw, 135px);
 }
 #carouselAboutUs .carousel-control-prev{
-    transform:translate(34.6vw, 120px);
+    transform:translate(34.6vw, 135px);
 }
 .timeline .card{
     width:25.7vw;
@@ -878,7 +878,7 @@ input{
     }
 
     .about-home{
-        margin-bottom:-20px; !important;
+        margin-bottom:-20px !important;
         margin-top: -90px;
     }
 
@@ -1336,27 +1336,12 @@ input{
         margin-top:70px;
     }
 }
-/*
-cambiato breakpoint da md a lg così non sballa di:
--contatore in home
--sezione eventi in home
--carosello in mission
-carosello in about us (la nostra storia, modificato anche padding)
-cambiato media query di .post-event per posizionare bene il bottone
-rimpicciolito le immagini nella sezione about us della home tra i 768 e gli 860 px per evitare che si incastrino
-centrato in altezza i testi nelle card che scorrono in about us su mobile
-cambiato dimensioni, padding e line-height dei div a pentagono in smart helmet, per farli più responsive
-abbreviato un nome evento lunghissimo (automotive testing expo --> A.T.E.)
-aggiunto le barrette blu invece che il bordo a:
--le due card in Mission
--la sezione Mission della home
-sistemato una card in Mission che si disallineava perché ha meno testo
- */
 
-/*
- cambiamenti 12/04
--anche sezione about us della home passa da carosello a 3 elementi insieme a lg invece che md
--idem tools
--ingrandito immagini tra md e lg nei carousel modificati (aggiungendo classe bigger-images)
--modificato spazi tra le frecce e le scritte nei carousel modificati per allineare tutto
- */
+
+@media screen and (max-width: 768px){
+    .event-hamburger{
+        position:absolute;
+        top:20px;
+        left:312px;
+    }
+}
